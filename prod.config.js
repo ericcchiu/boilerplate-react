@@ -11,7 +11,7 @@ module.exports = {
         test: /\.js(\?.*)?$/i,
         cache: true,
         parallel: true,
-        sourceMap: true,
+        sourceMap: false,
       })
     ]
   },

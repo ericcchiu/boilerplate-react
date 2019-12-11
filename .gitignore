@@ -63,6 +63,8 @@ typings/
 # package-lock.json file
 package-lock.json
 
+# Source Maps
+public/root.bundle.js.map
+
 # Bundles
 public/root.bundle.js
-public/root.bundle.js.map

@@ -1,9 +1,21 @@
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+
 module.exports = {
   mode: "development",
   devtool: "source-map",
   target: "web",
   context: `${__dirname}/client/src`,
   entry: ["core-js", "./index.js"],
+  optimization: {
+    minimizer: [
+      new UglifyJsPlugin({
+        test: /\.js(\?.*)?$/i,
+        cache: true,
+        parallel: true,
+        sourceMap: true,
+      })
+    ]
+  },
   module: {
     rules: [
       {
