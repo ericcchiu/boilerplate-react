@@ -55,13 +55,14 @@ typings/
 .yarn-integrity
 
 # dotenv environment variables file
-.env
+*.env
 
 # next.js build output
 .next
 
-# Environmental files
-*.env
-
-#package-lock.json file
+# package-lock.json file
 package-lock.json
+
+# Bundles
+public/root.bundle.js
+public/root.bundle.js.map
